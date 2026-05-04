@@ -1,0 +1,636 @@
+
+header {
+  min-height: 100px;
+  padding: 12px 0;
+  background-color: #2c3e50;
+  color: white;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer { 
+  height: 100px;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: #2c3e50;
+  padding:3px;
+  text-align: center;
+}
+
+.Menu {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #364e67;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 15px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #bdc3c7;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ecf0f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 31px;
+  cursor: pointer;
+  background-color: #b4bec9;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+}
+
+.openbtn:hover {
+  background-color: #2c3e50;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.split {
+  height: 40%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 25px;
+  transition: left 0.5s;
+}
+
+.split::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.55);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.left {
+  background-image: url("HI4-HP-1.png"); /*https://www.stationgossip.com/2020/06/27-powerful-pictures-from-history-of.htmll*/
+  background-position: center;
+  padding:5px;
+  background-size: cover;
+  padding:120px;
+}
+
+.ic1-bg {
+  background-image: url("HI4-IC-2.avif");
+}
+.ic2-bg {
+  background-image: url("HI4-IC-1.jpg");
+}
+.ic3-bg {
+  background-image: url("HI4-IC-3.png");/*https://time.com/6263354/black-lgbtq-history-representation/*/
+}
+.lsr-bg {
+  background-image: url("HI4-LSR-1.webp");
+}
+.lsr1-bg {
+  background-image: url("HI4-LSR-2.webp");
+}
+.lsr3-bg {
+  background-image: url("HI4-LSR-3.png");
+}
+.lsr4-bg {
+  background-image: url("HI4-LSR-4.webp");/*https://www.reddit.com/r/HistoryPorn/comments/7k2qra/reminder_day_picketing_at_independence_hall/ */
+}
+.reformations-bg {
+  background-image: url("HI4-Reformation.png");
+}
+.msa-1-bg {
+  background-image: url("HI4-MSA-1.jpg");/*https://timalderman.com/2020/03/03/gay-history-the-bizarre-gay-cure-experiment-that-were-written-out-of-scientific-history/*/
+  background-size: 70%;
+}
+.msa-2-bg {
+  background-image: url("HI4-MSA-2.jpg");
+}
+.msa-3-bg {
+  background-image: url("HI4-MSA-3.avif");
+}
+.tkf1-bg {
+  background-image: url("HI4-tkf01.jpg");
+
+}.tkf3-bg {
+  background-image: url("HI4-TKF01.jpg");
+}
+.sources-bg {
+  background-image: url("HI4-Source.jpg");
+}
+
+body {
+  background-color: #ecf0f1;
+  margin: 0;
+  font-family: 'arial', sans-serif;
+}
+
+.bio-image {
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  border: solid black 2px;
+}
+
+.bio-image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.search {
+	position: relative;
+	width: 40ch;
+	height: 3rem;
+	padding-left: 1.5rem;
+	border-radius: 1.5rem;
+	background: #ffffff;
+	box-shadow: 0 1.25rem 5rem -1rem rgba(0, 0, 30, 0.5);
+	transition: transform 200ms ease-in-out;
+
+  &::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: 1.5rem;
+		box-shadow: 0 0.5rem 2rem -1rem rgba(0, 0, 100, 0.5);
+		opacity: 0;
+		pointer-events: none;
+
+		transition: opacity 300ms ease-in-out;
+	}
+
+	input {
+		all: unset;
+		height: 100%;
+		color: #333355;
+
+		&::placeholder {
+			color: inherit;
+			opacity: 0.3;
+		}
+	}
+
+	button {
+		all: unset;
+		position: absolute;
+		right: 0;
+		height: 3rem;
+		padding-left: 3rem;
+		border-radius: 1.5rem;
+		background: #296ec7;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			border-radius: 1.5rem;
+			box-shadow: 0 0.5rem 2rem 0 rgb(41, 110, 199, 0.25),
+				0 0.5rem 1rem -0.75rem rgb(0, 0, 0, 0.5);
+			opacity: 0;
+			transition: opacity 300ms ease-in-out;
+		}
+
+		&:hover::before {
+			opacity: 1;
+		}
+
+		label {
+			display: block;
+			opacity: 0;
+			color: white;
+			width: 0;
+			transition: width 200ms ease-in-out, opacity 100ms ease-in-out;
+		}
+
+		.search-icon {
+			position: absolute;
+			height: 0.875rem;
+			width: 0.875rem;
+			top: 1rem;
+			left: 0.875rem;
+			border: 0.125rem solid white;
+			border-radius: 50%;
+			box-sizing: border-box;
+			transform: rotate(-45deg);
+
+			&::after {
+				content: "";
+				position: absolute;
+				height: 0.5rem;
+				width: 0.125rem;
+				background: white;
+				left: calc(50% - (0.125rem / 2));
+				bottom: -0.6rem;
+			}
+		}
+	}
+
+	&:has(input:not(:placeholder-shown)) {
+		button {
+			label {
+				opacity: 1;
+				width: 3rem;
+				margin-left: -0.5rem;
+				padding-right: 1rem;
+			}
+		}
+	}
+
+	&:has(input:focus) {
+		transform: translateY(-0.5rem);
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
+.search-container {
+  position: sticky;
+  top: 0;
+  background-color: #34495e;
+  padding: 15px;
+  z-index: 100;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.search-box {
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #7f8c8d;
+  border-radius: 4px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.search-box::placeholder {
+  color: #bdc3c7;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.search-btn {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-btn:hover {
+  background-color: #2980b9;
+}
+
+mark {
+  background-color: #f39c12;
+  color: #000;
+  padding: 2px 4px;
+}
+
+
+/*
+image Overlay with Text on Hover*/
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 85%;
+    max-width: 200px;
+  }
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  max-width: 350px;
+  aspect-ratio: 1;
+  margin: 10px;
+}
+
+.gallery {
+  background-color: #ecf0f1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin: auto;
+}
+        
+.gallery .row {
+  display:flex;
+  flex-wrap:nowrap;
+}
+
+.gallery .row .container {
+  width:100%;
+  height: 100%;
+}
+
+.gallery .row .container .image { 
+width:100%; 
+height:100%; 
+object-fit:cover;
+display:block;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 2px solid black;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .2s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+
+/*Page1 container*/
+
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container1 {
+    width: 85%;
+    max-width: 200px;
+  }
+}
+
+.container1 {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  max-width: 250px;
+  aspect-ratio: 9/16;
+  margin: 10px;
+}
+
+.gallery1 {
+  background-color: #ecf0f1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin: auto;
+}
+
+.gallery1 .row {
+  display:flex;
+  flex-wrap:nowrap;
+}
+
+.gallery1 .row .container1 {
+  width:100%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.gallery1 .row .container1 .image1 { 
+width:100%; 
+height:100%; 
+object-fit:cover; 
+display:block; 
+}
+
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 2px solid black;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .2s ease;
+}
+
+.container1:hover .overlay1 {
+  height: 100%;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/*Article*/
+
+.split.left h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  z-index: 3;
+}
+
+h3{
+  font-family: 'arial', sans-serif;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+h4 {
+  font-family: 'arial', sans-serif;
+  font-size: 15px;
+  color: #18395d;
+  margin-left: 20px;
+}
+
+h6 {
+  margin-left: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  color: #34495e;
+  font-family: 'arial', sans-serif;
+}
+
+.gallery2 {
+  background-color: #ecf0f1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin: auto;
+}
+
+.gallery2 .biography{
+  margin-left: 100px;
+}
+
+.img {
+  float: right;
+  margin-right: 10px;
+}
+
+

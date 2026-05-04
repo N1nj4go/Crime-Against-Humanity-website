@@ -1,0 +1,92 @@
+<!--
+https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
+https://www.w3schools.com/howto/howto_css_split_screen.asp
+https://codepen.io/b-jody-spedicato/pen/ExNzqQP*/
+https://www.w3schools.com/css/css_background_image.asp
+
+
+CSS Position Div Below Another Div: -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="HI4-Css.css">
+    <script src="HI4-Js.js"></script>
+<head>
+    <title>Crime against humanity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Crime against humanity-<i style="color: #e5f0f9;">LGBT</i> history in the 20th century</h1>
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="Menu">
+            <a href="HI4-HomePage.html">Home</a>
+
+            <a href="HI4-Intro and context.html">Intro and context</a>
+
+            <a href="HI4-Legal and State Repressions.html">Legal and state repressions</a>
+
+            <a href="HI4-Medical and scientific abuse.html">Medical and scientific abuse</a>
+
+            <a href="HI4-Reformations.html">Reformations</a>
+
+            <a href="HI4-Timeline and key figures.html">Key figures</a>
+
+            <a href="HI4-Sources.html">Sources</a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="split left">
+            <center><div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search on this page..." onkeypress="if(event.key==='Enter') searchPage()">
+                <button class="search-btn" onclick="clearSearch()">Clear</button></center>
+        </div>
+    </div>
+            <div class="gallery">
+                <h3>Table of Contents</h3>
+                <div class="row">
+                    <a href="HI4-Intro and context.html" class="container">
+                        <img src="HI4-IC-2.avif" alt="info" class="image">
+                        <div class="overlay"><div class="text">Introduction and context</div></div>
+                    </a>
+                    <a href="HI4-Legal and State Repressions.html" class="container">
+                        <img src="HI4-LSR-1.webp" alt="info" class="image">
+                        <div class="overlay"><div class="text">Legal and state repressions</div></div>
+                    </a>
+                    <a href="HI4-Medical and scientific abuse.html" class="container">
+                        <img src="HI4-MSA-1.jpg" alt="info" class="image">
+                        <div class="overlay"><div class="text">Medical and scientific abuse</div></div>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <a href="HI4-Reformations.html" class="container">
+                        <img src="HI4-Reformation.png" alt="info" class="image">
+                        <div class="overlay"><div class="text">Reformations</div></div>
+                    </a>
+                    <a href="HI4-Timeline and key figures.html" class="container">
+                        <img src="HI4-TKF01.jpg" alt="info" class="image">
+                        <div class="overlay"><div class="text">Key figures</div></div>
+                    </a>
+                    <a href="HI4-Sources.html" class="container">
+                        <img src="HI4-Source.jpg" alt="info" class="image">
+                        <div class="overlay"><div class="text">Sources</div></div> 
+                    </a>
+                </div>
+            </div>
+
+<footer>
+    <h4>Eline Lemaire</h4>
+</footer>
+
+</body>
+</html>
