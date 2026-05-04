@@ -2,7 +2,5 @@ History 4 CERDH project 2026.
 -------------------------------------
 
 Read this document before opening any other file in this folder!
-
-To see the project as intended, please do not open any file other than "HI4-HomePage", which is the starting page of the website. To open it, right-click -> open with -> Google Chrome or Microsoft Edge and put the page in full-screen for a better experience. You can now access the full project.
-
-Please do not edit code or move any file from the folder.
+No need to open any file unless you need to check the code.
+Here is the direct link to the website: https://n1nj4go.github.io/Crime-Against-Humanity-website/
